@@ -9,4 +9,4 @@ namespace ProjetcsSchool_Api.Data
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Professor> Professores { get; set; }
     }
-}
+} 
