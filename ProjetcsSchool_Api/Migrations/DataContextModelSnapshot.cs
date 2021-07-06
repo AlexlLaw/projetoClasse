@@ -38,6 +38,32 @@ namespace ProjetcsSchool_Api.Migrations
                     b.HasIndex("ProfessorId");
 
                     b.ToTable("Alunos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DataNascimento = "11/04/1998",
+                            Nome = "Lucas",
+                            ProfessorId = 1,
+                            Sobrenome = ""
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DataNascimento = "05/03/1997",
+                            Nome = "Jhonatan",
+                            ProfessorId = 1,
+                            Sobrenome = ""
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DataNascimento = "23/02/2001",
+                            Nome = "Alan",
+                            ProfessorId = 2,
+                            Sobrenome = "Juan"
+                        });
                 });
 
             modelBuilder.Entity("ProjetcsSchool_Api.models.Professor", b =>
@@ -52,6 +78,23 @@ namespace ProjetcsSchool_Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Professores");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Àlex"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Eduardo"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "David"
+                        });
                 });
 
             modelBuilder.Entity("ProjetcsSchool_Api.models.Aluno", b =>
