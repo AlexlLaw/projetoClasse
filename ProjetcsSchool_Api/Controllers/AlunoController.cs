@@ -59,7 +59,6 @@ namespace ProjetcsSchool_Api.Controllers
             }
         }
 
-
         [HttpPost]
         public async Task<IActionResult> post(Aluno model)
         {
