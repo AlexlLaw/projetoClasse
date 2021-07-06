@@ -17,6 +17,6 @@ namespace ProjetcsSchool_Api.Data
 
         //Professor
         Task<Professor[]> GetAllProfessorsAsync(bool includeAluno);
-        Task<Professor> GetProfessorsAsyncByProfessor(int AlunoId, bool includeAluno);
+        Task<Professor> GetProfessorsAsyncById(int AlunoId, bool includeAluno);
     }
 }

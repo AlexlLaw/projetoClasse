@@ -90,7 +90,7 @@ namespace ProjetcsSchool_Api.Data
             return await query.ToArrayAsync();
         }
 
-        public async Task<Professor> GetProfessorsAsyncByProfessor(int ProfessorId, bool includeAluno)
+        public async Task<Professor> GetProfessorsAsyncById(int ProfessorId, bool includeAluno)
         {
               IQueryable<Professor> query = _context.Professores;
 
